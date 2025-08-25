@@ -1,5 +1,5 @@
 # Philosophers
-The Philosophers project simulates a classic problem involving multiple philosophers sitting around a table with a bowl of spaghetti and forks. The goal is to manage their eating, thinking, and sleeping behaviors using threading and synchronization.
+The Philosophers project simulates a classic problem involving multiple philosophers sitting around a table with a bowl of spaghetti and one fork each. The goal is to manage their eating, thinking, and sleeping behaviors using **threading** and synchronization.
 
 Philosophers alternate between eating, thinking, and sleeping.
 Each philosopher needs two forks (one on their left and one on their right) to eat.
@@ -11,7 +11,7 @@ To compile philosophers:
 
 1. Clone the repository:
 ```
-git clone git@github.com:k2matu/philosophers.git
+git clone git@github.com:k2matu/42-philosophers.git philosophers
 ````
 2. Navigate into the directory:
 ```
