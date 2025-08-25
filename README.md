@@ -5,6 +5,9 @@ Philosophers alternate between eating, thinking, and sleeping.
 Each philosopher needs two forks (one on their left and one on their right) to eat.
 The simulation stops when a philosopher dies of starvation or when all philosophers have eaten the specified number of times (if provided).
 
+## Prerequisites
+- A C compiler (e.g., `gcc` or `clang`)
+- `make`
 
 ## Compilation
 To compile philosophers:
@@ -38,4 +41,36 @@ The program takes the following arguments:
 To run a simulation with 5 philosophers where each philosopher has 200 milliseconds to eat, 100 milliseconds to sleep, and dies if they don’t eat within 500 milliseconds, use:
 ```
 ./philo 5 500 200 100
+```
+eg., Output:
+```
+0 1 is thinking
+0 2 has taken a fork
+0 4 has taken a fork
+0 5 is thinking
+0 4 has taken a fork
+0 4 is eating
+0 3 is thinking
+0 2 has taken a fork
+0 2 is eating
+200 4 is sleeping
+200 5 has taken a fork
+200 5 has taken a fork
+200 5 is eating
+201 2 is sleeping
+201 3 has taken a fork
+201 3 has taken a fork
+201 3 is eating
+300 4 is thinking
+301 2 is thinking
+400 5 is sleeping
+400 1 has taken a fork
+400 1 has taken a fork
+400 1 is eating
+401 3 is sleeping
+401 4 has taken a fork
+401 4 has taken a fork
+401 4 is eating
+500 5 is thinking
+501 2 died
 ```
